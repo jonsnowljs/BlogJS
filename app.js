@@ -18,7 +18,8 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-mongoose.connect("mongodb+srv://admin-jason:Test123456@cluster0.aeyjr.mongodb.net/blogDB", {useNewUrlParser: true});
+//replace <password> with your password
+mongoose.connect("mongodb+srv://<password>@cluster0.aeyjr.mongodb.net/blogDB", {useNewUrlParser: true});
 
 
 const postsSchema = {
